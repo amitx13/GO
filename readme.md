@@ -43,3 +43,9 @@ we can also define variable in the initial if stmt
 if size := 7; size > 5{
     fmt.Println("f u are big")
 }
+
+why pointer?
+
+Sometimes when u pass on these variable a copy of this variable is passed on whenever there is a case when u want to avoide such this cases and u want absolute
+garentee that always actual value should be passed on then we prefer that a pointer should be passed. A pointer is just a direct reference to a memory address
+

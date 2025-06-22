@@ -521,7 +521,7 @@ func main() {
 */
 
 /*
-# Interfaces in Go:
+#  Interfaces in Go:
 
 Interface is a type that specify a set of methods but does not provide it's implementation. It allow you to define behaviour without worring about how's it done
 It's just collection of methods signature.
@@ -531,7 +531,7 @@ Means - Interfaces are implemented implicitly.
 A quick way of checking whether a struct implements an interface is to declare a function that takes an interface as an argument.
 If the function can take the struct as an argument, then the struct implements the interface.
 
-# Thumb rules:
+#  Thumb rules:
 1. Keep Interface Small.
 2. Interfaces Should Have No Knowledge of Satisfying Types.
 	An interface should define what is necessary for other types to classify as a member of that interface.
@@ -541,7 +541,7 @@ If the function can take the struct as an argument, then the struct implements t
 		- Interfaces define function signatures, but not underlying behavior.
 
 
-# Additional informations about interfaces:
+#  Additional informations about interfaces:
 
 1. The empty interface - interface{} It does not have any methods. Therefore, every types in GO implements empty interface.
 2. Zero value of an interface - It can be nil. It's their zero value. That's why when we check for error in Go, we check err != nil

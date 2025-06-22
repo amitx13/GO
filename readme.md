@@ -1,7 +1,7 @@
-GOOOOOOOOlang
+# GOOOOOOOO
 
-**WHY GO?**
-```
+# WHY GO?
+```go
 1. Go is a statically typed, compiled language. which means that the type of a variable is known at compile time.
 2. Fast and lightweight
 3. Easily concurrent(Multiple tasks make progress at the same time, but they may not run simultaneously. Think of it as task switching) and (parallel)multi-threaded
@@ -9,14 +9,16 @@ GOOOOOOOOlang
 5. Go code generally runs faster than interpreted languages (Js, python, Ruby) and compiles faster than other compiled languages (Rust, C, C++, etc.)
 6. Go runtime is responsible for managing memory (to cleanup unused memory), garbage collection, and scheduling goroutines.
 ```
-**Lexer** : The Job of the lexer is to simple understand that u are following the grammer of the lang. So that the syntax is correct it does it before compilation 
+# Lexer
+The Job of the lexer is to simple understand that u are following the grammer of the lang. So that the syntax is correct it does it before compilation 
 
-**Memory Management** : Memory allocation and deallocation happens automatically in GO.
+# Memory Management 
+Memory allocation and deallocation happens automatically in GO.
 *new()* - Allocate memory but no initialization, will get a memory address, zeroed storage - we cannot put any data initialy
 *make()* - Allocate memory and init, will get a memory address, non-zeroed storage - can put any data.
 *GC* - Garbage collector happens automatically anything that is nil or outof scope is eligible.
 
-**GO ENV (go env)** 
+# GO ENV (go env)
 *GOGC* - The GOGC variable sets the initial garbage collection target percentage. A collection is triggered when the ratio of freshly collected data to live data remaining after the previous collection reaches this percentage. The dafault is GOGC=100
 
 -: *Notes* :-
@@ -33,7 +35,7 @@ Formating string in Go:
     %q - represents a string as it is quoted
     %T - represents the type of the value
 
-**Conditionals**
+# Conditionals
 
 ```go
 if size > 5 {
@@ -51,7 +53,7 @@ why pointer?
 Sometimes when u pass on these variable a copy of this variable is passed on whenever there is a case when u want to avoide such this cases and u want absolute
 garentee that always actual value should be passed on then we prefer that a pointer should be passed. A pointer is just a direct reference to a memory address
 
-**Switch case**
+# Switch case
 
 Switch statements are a way to compare a value against multiple options
 
@@ -73,7 +75,7 @@ func getCreator(name string) string {
 }
 ```
 
-**Functions**
+# Functions
 
 functions in Go is defined using `func` keyword 
 *Types of return in Go*
@@ -81,7 +83,7 @@ functions in Go is defined using `func` keyword
 2. Naked return
 
 
-**Named Return Example**
+# Named Return Example
 
 ```go
 func add(a int, b int) (sum int) {
@@ -90,7 +92,7 @@ func add(a int, b int) (sum int) {
 }
 ```
 
-**Naked Return Example**
+# Naked Return Example
 
 ```go
 func multiply(a int, b int) (int) {
@@ -100,7 +102,7 @@ func multiply(a int, b int) (int) {
 
 *Guard clauses are a way to handle errors in Go. They are a way to handle errors early in a function and return early if an error occurs.*
 
-**Anonymous functions**
+# Anonymous function 
 Anonymous functions are functions that are defined without a name. They are useful when you need to define a function inline without having to name it.
 Or can only be used once.
 
@@ -128,7 +130,7 @@ func main() {
 }
 ```
 
-**Defer**
+# Defer
 The defer keyword is a fairly unique feature of Go. It allows a function to be executed automatically just before its enclosing function returns.
 Defer is often used to ensure that resources are released when they are no longer needed.
 Defer is a great way to make sure that something happens before a function exits, even if there are multiple return statements, a common occurrence in Go.
@@ -136,7 +138,7 @@ a func can have mutiple defer statements and they are executed in LIFO order.
 
 usecase: defer fmt.Println("TEXTIO BOOTUP DONE")
 
-**Closures**
+# Closures
 Closures in Go is similar to JavaScript. A closure is a function that has access to variables from an outer function in which it was declared.
 It can access variables from the outer function even after the outer function has finished executing.
 
@@ -150,7 +152,7 @@ func main(){
 }
 ```
 
-**Methods**
+# Methods
 
 *Methods are just fuction that have a receiver. A receiver helps buinding a specific method to a specific type.*
 
@@ -208,7 +210,7 @@ func main() {
 
 ```
 
-**Memory Layout**
+# Memory Layout
 
 *Why the ordering of fields in a struct matters?*
 becz it can have huge impact on memory usage and performance.
@@ -218,7 +220,7 @@ Always try to order fields in a struct from largest to smallest to minimize memo
 int > float64 > string > bool
 ```
 
-**Interfaces**
+# Interfaces
 
 Interface is a type the only specify the set of methods but does not provide it's implementation.
 It's just collection of methods signature.

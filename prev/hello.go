@@ -122,7 +122,7 @@ func getCreator(name string) string {
 }
 
 Note: the breack statement is not required in Go. Go automatically (implecit) breaks out of the switch statement after a case is matched.
-If you do want a case to fall through to the next case, you can use the fallthrough keyword.
+fallthrough allows the next case to execute even if it doesn't match
 */
 
 /*
